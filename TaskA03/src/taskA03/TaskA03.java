@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -22,6 +23,7 @@ public class TaskA03 {
 		int secondSpace;
 		String value;
 		Map<Vertex, List<Edge>> automata = new HashMap<Vertex, List<Edge>>();
+		ArrayList<Edge> edges = new ArrayList<Edge>();
 		Vertex state = new Vertex(0);
 		Vertex state2 = new Vertex(0);
 		Map<Integer, Vertex> createdStates = new HashMap<Integer, Vertex>();
@@ -60,7 +62,8 @@ public class TaskA03 {
 					state2 = state2.getVertex(createdStates, nextState);
 				}
 				
-				automata.put(state, Arrays.asList(new Edge(state, state2, value)));
+				edges.add(new Edge(state, state2, value));
+				automata.put(state, edges);
 			} else {
 				currentState = Integer.parseInt(line);
 				
@@ -88,11 +91,11 @@ public class TaskA03 {
 
 	    try {
 	        String word;
-	        br = new BufferedReader(new FileReader("D:\\Projekty\\TaskA03\\Dane\\simple1.arg"));//words));
+	        br = new BufferedReader(new FileReader("D:\\Projekty\\TaskA03\\Dane\\penultimate.arg"));//words));
 
 	        while ((word = br.readLine()) != null) {
 	            aut = new Automata(automata, createdStates, finalStates, word);
-				
+	            
 	            if (aut.checkIfWordExists())
 	            	System.out.println("YES " + word);
 	            else
