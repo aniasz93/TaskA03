@@ -1,0 +1,26 @@
+package taskA03;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class TaskA03 {
+
+	public static void main(String[] args) throws IOException {
+		
+		/*BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		String line;
+		
+		while ((line = reader.readLine()) != null && line.length() != 0) {
+			String[] automata = line.split(" ");
+
+		}*/
+		
+		boolean result1 = (new Integer(127) == new Integer(127));
+		boolean result2 = (new Integer(128) == new Integer(128));
+		
+		System.out.println(result1);
+		System.out.println(result2);
+	}
+
+}

@@ -1,0 +1,19 @@
+package taskA03;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class TaskA03 {
+
+	public static void main(String[] args) {
+		
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		String line;
+		
+		while ((line = reader.readLine()) != null && line.length() != 0) {
+			String[][] automata = line.split(" ");
+
+		}
+	}
+
+}

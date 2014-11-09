@@ -1,0 +1,17 @@
+package taskA03;
+
+import java.util.Map;
+
+public class Automata {
+	
+	String word;
+
+	public Automata(String word) {
+		this.word = word;
+	}
+	
+	public boolean checkIfWordExists(Map<Integer, Vertex> automata, Map<Integer, Vertex> finalStates) {
+		
+		return false;
+	}
+}

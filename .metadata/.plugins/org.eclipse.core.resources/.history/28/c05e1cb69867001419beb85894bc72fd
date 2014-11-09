@@ -1,0 +1,42 @@
+package taskA03;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class Vertex {
+
+	int state;
+	
+	public Vertex (int state) {
+		this.state = state;
+	}
+	
+	public boolean checkIfExists(Map automata, int state) {
+		
+		if (automata.containsKey(state))
+			return true;
+		
+		Iterator mapIterator = automata.entrySet().iterator();
+		Iterator listIterator;
+		while (mapIterator.hasNext()) {
+			Entry mapEntry = (Entry)mapIterator.next();
+			List<Edge> edges = (List<Edge>) mapEntry.getValue();
+			
+			int i = 0;
+			while (listIterator.hasNext()) {
+				List listEntry = (List) listIterator.next();
+				Edge edge = (Edge) listEntry.get(i);
+				i++;
+			}
+			listIterator = edges.iterator();
+			listIterator.next();
+			//Entry listEntry = (Entry)listIterator.next();
+			Edge edge = (Edge)listIterator..get();
+		}
+		if(automata.)
+		
+		return false;
+	}
+}

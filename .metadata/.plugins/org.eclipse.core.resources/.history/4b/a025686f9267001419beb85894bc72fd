@@ -1,0 +1,18 @@
+package taskA03;
+
+import java.util.Map;
+
+public class Vertex {
+
+	int state;
+	
+	public Vertex (int state) {
+		this.state = state;
+	}
+	
+	public boolean checkIfExists(Map automata, Vertex state) {
+		for each ()
+		
+		return false;
+	}
+}

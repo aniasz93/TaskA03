@@ -1,0 +1,10 @@
+package taskA03;
+
+public class Automata {
+	
+	String word;
+
+	public Automata(String word) {
+		this.word = word;
+	}
+}

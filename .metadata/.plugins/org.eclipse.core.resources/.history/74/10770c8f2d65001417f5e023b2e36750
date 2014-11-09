@@ -1,0 +1,8 @@
+package taskA03;
+
+public class Edge {
+
+	public Edge(Vertex startVer, Vertex endVer, String value) {
+		
+	}
+}

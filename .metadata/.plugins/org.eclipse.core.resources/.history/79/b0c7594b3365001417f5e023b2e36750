@@ -1,0 +1,46 @@
+package taskA03;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
+public class TaskA03 {
+
+	public static void main(String[] args) throws IOException {
+		
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		String line;
+		int currentState;
+		int nextState;
+		int firstSpace;
+		int secondSpace;
+		String value;
+		ArrayList automata = new ArrayList<Edge>();
+		
+		/*while ((line = reader.readLine()) != null && line.length() != 0) {
+			
+			firstSpace = line.indexOf(" ");
+			currentState = Integer.parseInt(line.substring(0, firstSpace - 1));
+			
+			secondSpace = line.lastIndexOf(" ");
+			nextState = Integer.parseInt(line.substring(firstSpace + 1, secondSpace - 1));
+			
+			value = line.substring(secondSpace + 1);
+			
+			for (Edge edge : automata)
+			{
+				
+			}
+			
+			automata.add(new Edge(new Vertex(currentState), new Vertex(nextState), new Character(value)));
+
+		}*/
+		
+		boolean result1 = (new Integer(126) == new Integer(126));
+		boolean result2 = (new Integer(128) == new Integer(128));
+		System.out.println(result1);
+		System.out.println(result2);
+	}
+
+}

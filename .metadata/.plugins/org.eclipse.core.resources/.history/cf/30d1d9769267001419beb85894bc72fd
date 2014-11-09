@@ -1,0 +1,27 @@
+package taskA03;
+
+import java.util.Iterator;
+import java.util.Map;
+
+public class Vertex {
+
+	int state;
+	
+	public Vertex (int state) {
+		this.state = state;
+	}
+	
+	public boolean checkIfExists(Map automata, Vertex state) {
+		
+		if (automata.containsKey(state))
+			return true;
+		
+		Iterator<E> entries = automata.entrySet().iterator();
+		while (entries.hasNext()) {
+			Entry thisEntry = (Entry)entries.next();
+		}
+		if(automata.)
+		
+		return false;
+	}
+}

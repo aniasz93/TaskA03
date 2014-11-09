@@ -1,0 +1,14 @@
+package taskA03;
+
+public class Vertex {
+
+	int state;
+	
+	public Vertex (int state) {
+		this.state = state;
+	}
+	
+	public isVertex(int state) {
+		if 
+	}
+}
