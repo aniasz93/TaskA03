@@ -89,7 +89,11 @@ public class TaskA03 {
 
 	        while ((word = br.readLine()) != null) {
 	            aut = new Automata(automata, finalStates, word);
-	            aut.checkIfWordExists();
+				
+	            if (aut.checkIfWordExists())
+	            	System.out.println("YES " + word);
+	            else
+	            	System.out.println("NO " + word);
 	        }
 	    } catch (IOException e) {
 	        e.printStackTrace();
