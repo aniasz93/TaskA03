@@ -28,4 +28,12 @@ public class Edge {
 	public Character getCharacter() {
 		return value;
 	}
+	
+	public boolean checkIfEdgeHasSpecificCharacter(Character character) {
+		
+		if (value.equals(character))
+			return true;
+		
+		return false;
+	}
 }

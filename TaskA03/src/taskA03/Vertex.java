@@ -25,4 +25,14 @@ public class Vertex {
 
 		return vertexes.get(state);
 	}
+	
+	/*public void createVertex(Map<Integer, Vertex> createdStates, int currentState) {
+		
+		if (!checkIfExists(createdStates, currentState)) {
+			state = new Vertex(currentState);
+			createdStates.put(currentState, state);
+		} else {
+			state = state.getVertex(createdStates, currentState);
+		}
+	}*/
 }

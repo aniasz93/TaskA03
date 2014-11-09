@@ -7,5 +7,6 @@
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="taskA03.TaskA03"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="${nondet.arg}"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="TaskA03"/>
 </launchConfiguration>

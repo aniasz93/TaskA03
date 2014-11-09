@@ -5,9 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Dictionary;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -42,6 +40,8 @@ public class TaskA03 {
 				nextState = Integer.parseInt(line.substring(firstSpace + 1, secondSpace));
 				
 				value = new Character(line.substring(secondSpace));
+				
+				//state.createVertex(createdStates, currentState);
 				
 				if (!state.checkIfExists(createdStates, currentState)) {
 					state = new Vertex(currentState);
@@ -85,7 +85,7 @@ public class TaskA03 {
 
 	    try {
 	        String word;
-	        br = new BufferedReader(new FileReader(words));
+	        br = new BufferedReader(new FileReader("D:\\Projekty\\TaskA03\\Dane\\simple1.arg"));//words));
 
 	        while ((word = br.readLine()) != null) {
 	            aut = new Automata(automata, finalStates, word);
