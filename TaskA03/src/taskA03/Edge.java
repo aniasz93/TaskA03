@@ -4,9 +4,9 @@ public class Edge {
 	
 	Vertex startVer;
 	Vertex endVer;
-	Character value;
+	String value;
 
-	public Edge(Vertex startVer, Vertex endVer, Character value) {
+	public Edge(Vertex startVer, Vertex endVer, String value) {
 		this.startVer = startVer;
 		this.endVer = endVer;
 		this.value = value;
@@ -25,11 +25,11 @@ public class Edge {
 		return endVer;
 	}
 	
-	public Character getCharacter() {
+	public String getCharacter() {
 		return value;
 	}
 	
-	public boolean checkIfEdgeHasSpecificCharacter(Character character) {
+	public boolean checkIfEdgeHasSpecificCharacter(String character) {
 		
 		if (value.equals(character))
 			return true;

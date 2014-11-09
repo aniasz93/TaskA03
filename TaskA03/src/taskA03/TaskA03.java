@@ -20,7 +20,7 @@ public class TaskA03 {
 		int nextState;
 		int firstSpace;
 		int secondSpace;
-		Character value;
+		String value;
 		Map<Vertex, List<Edge>> automata = new HashMap<Vertex, List<Edge>>();
 		Vertex state = new Vertex(0);
 		Vertex state2 = new Vertex(0);
@@ -29,6 +29,9 @@ public class TaskA03 {
 		
 		// read automata from standard in
 		while ((line = reader.readLine()) != null && line.length() != 0) {
+			
+			if (line.startsWith("#"))
+				break;
 			
 			firstSpace = line.indexOf(" ");
 			
@@ -39,7 +42,7 @@ public class TaskA03 {
 				secondSpace = line.lastIndexOf(" ");
 				nextState = Integer.parseInt(line.substring(firstSpace + 1, secondSpace));
 				
-				value = new Character(line.substring(secondSpace));
+				value = line.substring(secondSpace + 1);
 				
 				//state.createVertex(createdStates, currentState);
 				
@@ -76,7 +79,7 @@ public class TaskA03 {
 		BufferedReader br = null;
 		Automata aut;// = new Automata();
 		
-		if (0 < args.length) {
+		/*if (0 < args.length) {
 		   words = new File(args[0]);
 		}/* else {
 		   System.err.println("Invalid arguments count:" + args.length);
@@ -88,7 +91,7 @@ public class TaskA03 {
 	        br = new BufferedReader(new FileReader("D:\\Projekty\\TaskA03\\Dane\\simple1.arg"));//words));
 
 	        while ((word = br.readLine()) != null) {
-	            aut = new Automata(automata, finalStates, word);
+	            aut = new Automata(automata, createdStates, finalStates, word);
 				
 	            if (aut.checkIfWordExists())
 	            	System.out.println("YES " + word);
